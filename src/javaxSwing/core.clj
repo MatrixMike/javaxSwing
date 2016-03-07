@@ -12,7 +12,7 @@
 (defn make-panel []
   (let [panel (proxy [JPanel] []
                 (paintComponent [g]
-                  (.drawLine g 0 0   psize psize)
+ ;;                 (.drawLine g 0 0   psize psize)
 ;;    (doto g
    ;  (.setColor (. Color YELLOW))
     ;  (.drawRect 100 100 width height)    ; why not working
