@@ -1,8 +1,9 @@
 ;;
-(ns drawing-demo
-  (:import [javax.swing JPanel JFrame]
-           [java.awt Dimension]))
+(ns javaxSwing.core
+  (:import [java.awt Dimension]) 
+  (:import [javax.swing JPanel JFrame] )
 
+  )
 ;; Tue 12 May 2015 00:15:46 EST 
  (def psize  200)
  (def width 50)
