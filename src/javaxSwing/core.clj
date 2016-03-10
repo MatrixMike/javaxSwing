@@ -1,5 +1,6 @@
 ;;
 (ns javaxSwing.core
+  (:gen-class)
   (:import [java.awt Dimension]) 
   (:import [javax.swing JPanel JFrame] )
 
