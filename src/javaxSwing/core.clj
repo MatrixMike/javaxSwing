@@ -45,7 +45,7 @@
       (.setPreferredSize (Dimension. (* psize 2) (* psize 2))))))
  ;---------------------------------------
 (defn make-frame [panel]
-  (doto (JFrame.)        ;;was (new JFrame)
+  (doto (new JFrame "javaxSwing")        ;;was (new JFrame)
     (.add panel)
      (.setDefaultCloseOperation JFrame/EXIT_ON_CLOSE)
     .pack
