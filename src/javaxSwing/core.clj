@@ -39,17 +39,19 @@
                   
 								;(for [leng [20 30 40 50 60 70 80 90]]
     ;  concat an integer to           	 (.drawString g ["Mike"+str(i)]   (* i 10) (- 200 (* i 15) ) ) )
-           (.drawString g "Mike"   (* i 10) (- 200 (* i 15) ) ) )  
-                      (doto g       (.setColor Color/BLUE))  	 
+          (doto g       (.setColor Color/BLUE))  
+          (.drawString g "Mike H"   (* i 10) (- 200 (* i 15) ) ) )  
+	 
             (doseq [j (range 1 5)]  
       ;      (def label ["mike " str(j)]  )
+                            (doto g       (.setColor Color/GREEN)) 
 			(.drawString g (str "Mike " j) psize (* j 75) )  )
                   ))]
     (doto panel
       (.setPreferredSize (Dimension. (* psize 2) (* psize 2))))))
  ;---------------------------------------
 (defn make-frame [panel]
-  (doto (new JFrame "javaxSwing")        ;;was (new JFrame)
+  (doto (new JFrame "javaxSwing with colours")        ;;was (new JFrame)
     (.add panel)
      (.setDefaultCloseOperation JFrame/EXIT_ON_CLOSE)
     .pack
