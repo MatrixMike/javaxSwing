@@ -2,6 +2,7 @@
 (ns javaxSwing.core
   (:gen-class)
   (:import [java.awt Dimension]) 
+   (:import [java.awt Color])
   (:import [javax.swing JPanel JFrame] )
 
   )
@@ -16,12 +17,14 @@
  ;;                 (.drawLine g 0 0   psize psize)
 ;;    (doto g
    ;  (.setColor (. Color YELLOW))
+ ;;  (.setColor Color/YELLOW)
     ;  (.drawRect 100 100 width height)    ; why not working
 ;;     (.setColor (. Color BLACK))
    ;;  (.drawRect 0 0 (dec width) (dec height))
    ;   (.setFont g (Font. "Serif" (. Font PLAIN) 24))
  ;;     (.drawString "Hello World!" 20 40))))
                  ; (.drawLine g 0 psize psize psize)
+           (doto g       (.setColor Color/RED))
           (doseq [j (range 1 5)]       
         (doseq [i (range 0 10)]          
                  ; (for [leng [20 30 40 50 60 70 80 90]]
@@ -36,7 +39,8 @@
                   
 								;(for [leng [20 30 40 50 60 70 80 90]]
     ;  concat an integer to           	 (.drawString g ["Mike"+str(i)]   (* i 10) (- 200 (* i 15) ) ) )
-           (.drawString g "Mike"   (* i 10) (- 200 (* i 15) ) ) )    	 
+           (.drawString g "Mike"   (* i 10) (- 200 (* i 15) ) ) )  
+                      (doto g       (.setColor Color/BLUE))  	 
             (doseq [j (range 1 5)]  
       ;      (def label ["mike " str(j)]  )
 			(.drawString g (str "Mike " j) psize (* j 75) )  )
