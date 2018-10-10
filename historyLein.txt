@@ -1,0 +1,30 @@
+    1  cd  ~/lein/
+    2  l s-lc
+    3  ls -lc
+    4  cat lein
+    5  ls -lc
+    6  chmod a+x ~/bin/lein
+    7  sudo mv lein /bin/
+    8  cd ~/
+    9  lein
+   10  cd /bin
+   11  ls -lc
+   12  ls -lc  b*
+   13  ls -lc  l*
+   14  chmod a+x /bin/lein 
+   15  ls -lc  l*
+   16  cd ~/
+   17  lein
+   18  git clone https://github.com/MatrixMike/javaxSwing.git
+   19  cd javaxSwing/
+   20  ls -lc
+   21  tree
+   22  sudo apt install tree
+   23  tree
+   24  lein uberjar
+   25  tree
+   26  java -jar target/javaxSwing-1.0.2-SNAPSHOT-standalone.jar 
+   27  df -h
+   28  history 
+   29  java -jar target/javaxSwing-1.0.2-SNAPSHOT-standalone.jar 
+   30  history > historyLein.txt
