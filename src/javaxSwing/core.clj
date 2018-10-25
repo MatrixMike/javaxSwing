@@ -1,4 +1,4 @@
-;;
+(comment revived Thursday, 25 October 2018)
 (ns javaxSwing.core
   (:gen-class)
   (:import [java.awt Dimension]) 
@@ -24,7 +24,7 @@
    ;   (.setFont g (Font. "Serif" (. Font PLAIN) 24))
  ;;     (.drawString "Hello World!" 20 40))))
                  ; (.drawLine g 0 psize psize psize)
-           (doto g       (.setColor Color/RED))
+           (doto g       (.setColor Color/ORANGE))
           (doseq [j (range 1 5)]       
         (doseq [i (range 0 10)]          
                  ; (for [leng [20 30 40 50 60 70 80 90]]
@@ -34,14 +34,13 @@
                   ;(.drawLine g psize 0   0 psize) 
                   
   (doseq [i (range 0 5)]
-								;(println (+ (* i 10) 2)    ))                
-                  
-                  
-								;(for [leng [20 30 40 50 60 70 80 90]]
+      ;(println (+ (* i 10) 2)    ))                
+    
+	;(for [leng [20 30 40 50 60 70 80 90]]
     ;  concat an integer to           	 (.drawString g ["Mike"+str(i)]   (* i 10) (- 200 (* i 15) ) ) )
           (doto g       (.setColor Color/BLUE))  
           (.drawString g "Mike H"   (* i 10) (- 200 (* i 15) ) ) )  
-	 
+          
             (doseq [j (range 1 5)]  
       ;      (def label ["mike " str(j)]  )
                             (doto g       (.setColor Color/GREEN)) 
